@@ -1,3 +1,33 @@
+
+
+//Object Date
+var today = new Date();
+alert(today);
+alert(today.getHours());
+alert(today.getMonth() + 1);
+alert(`Minutos: ${today.getMinutes()}`);
+
+//Condicionais
+/*var idade = prompt('Qual sua idade?');
+if (idade >=18) {
+    alert('adulto');
+} else {
+    alert('Menor de idade');
+} */
+
+/*var count = 20;
+while (count >= 0) {
+    console.log(count);
+    count--;
+}*/
+
+/*lista = ['Java', 'React', 'Flutter', 'Express'];
+for (var j = 0; j < lista.length; j++) {
+    console.log(lista[j]);
+
+}*/
+
+
 /*var corretora = {
     name :'XP Investimentos',
     country: 'Brasil',
@@ -49,50 +79,24 @@ console.log(frase.toUpperCase());
 
 */
 //Aprendendo Arrays
-frutas = ['maçã', 'pêra', 'limão'];
+/*frutas = ['maçã', 'pêra', 'limão'];
 console.log(frutas);
+console.log(frutas[0]);
+console.log(frutas.toString()[0]);
+console.log(frutas.join(' -- '));
+*/
 
-frutas.push('Manga');
-console.log(frutas);
+//var cor = 'verde';
+//var fruta = {nome: 'maçã', cor: cor};
+//console.log(fruta);
+//console.log(fruta.cor);
+//alert(fruta.nome);
 
-frutas.pop();
-console.log(frutas);
+//Dicionário em lista
+//var fruta = [{nome: 'maçã', cor: 'verde'}, {nome:'uva', cor:'verde'}];
+//console.log(fruta[0].nome);
+//console.log(`A fruta é ${fruta[1].nome}`);
 
-delete frutas[0];
-frutas[0] = 'Abacaxi';
 
-console.log(frutas.reverse()); //Parei no minuto 2:18
-
-//Objeto Number
-var maiorNum = Number.MAX_VALUE;
-var menorNum = Number.MIN_VALUE;
-var infityNeg = Number.NEGATIVE_INFINITY;
-var infityPos = Number.POSITIVE_INFINITY;
-
-console.log(maiorNum);
-console.log(menorNum);
-console.log(infityNeg);
-console.log(infityPos);
-
-//Transformando String para números inteiros e float;
-var num = '21.43';
-console.log(num);
-console.log(Number.parseInt(num));
-console.log(Number.parseFloat(num));
-
-//Utilizando o método Number.prototype
-var x = '30.12';
-console.log(Number.prototype.toExponential(x)); 
-console.log(Number.prototype.toFixed(x));
-console.log(Number.prototype.toPrecision(x));
-
-//Object Math
-console.log(Math.PI);
-console.log(Math.pow(2, 3));
-var y = Math.random();
-console.log(y);
-
-var cosseno = Math.cos(2);
-console.log(cosseno);
 
 
