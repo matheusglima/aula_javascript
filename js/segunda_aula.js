@@ -6,28 +6,30 @@ function botao() {
     //alert('Obrigado por clicar');
 }
 
-function Redirecionar() {
+function redireciona() {
     window.open('https://www.facebook.com/');
-    //window.location.href = 'https://www.facebook.com/';
-}
 
-function trocar(elemento) {
-    //document.getElementById('mouseover').innerHTML = 'Obrigado por passar o mouse';
-    elemento.innerHTML = 'Obrigado por passar o mouse';
-}
-
-function voltar(elemento) {
-    //document.getElementById('mouseover').innerHTML = 'Passe o mouse aqui';
-    elemento.innerHTML = 'Passe o mouse aqui';
 }
 
 function load() {
-    alert('Página carregada');
+    alert('Página carregada!');
+}
+
+function troca(elemento) {
+    //document.getElementById("troco").innerHTML = "A mensagem foi trocada";
+    elemento.innerHTML = "A mensagem foi trocada!";
+}
+
+function volta(elemento) {
+    elemento.innerHTML = "Passe o mouse aqui!";
+    //document.getElementById("troco").innerHTML = "Passe o mouse aqui!";
 }
 
 function funcaoChange(elemento) {
     console.log(elemento.value);
 }
+
+
 /*Object create
 var Animal = {
     tipo: 'mamífero',
