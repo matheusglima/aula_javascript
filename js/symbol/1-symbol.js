@@ -9,10 +9,13 @@ const nameSymbol1 = Symbol('name');
 const nameSymbol2 = Symbol('name');
 
 const user = {
-    [nameSymbol1]: 'Matheus',
-    [nameSymbol2]: 'Outro nome',
+    //[nameSymbol1]: 'Matheus',
+    //[nameSymbol2]: 'Outro nome',
     lastName: 'Guimarães de Lima'
 }
+
+Object.assign(user, {country: 'Brasil'});
+console.log('\nRetorna cópia do objeto:', Object.assign({}, user, {age: 20}));
 
 console.log(user);//Habilita uma forma com que as propriedades não sejam sob escritas
 

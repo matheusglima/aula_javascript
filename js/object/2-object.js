@@ -7,10 +7,10 @@ const user = {
 console.log('\nChaves do objeto user:', Object.keys(user));
 
 //Recupera os valores das chaves do objeto
-console.log('\nValores da chave do objeto user:', Object.values(user));
+//console.log('\nValores da chave do objeto user:', Object.values(user));
 
 //Retorna array de arrays [nome_propriedade, valor_propiedade]
-console.log('\nLista de propriedades e valores:', Object.entries(user));
+//console.log('\nLista de propriedades e valores:', Object.entries(user));
 
 //Mergear propiedades do objeto
 Object.assign(user, {fullName: 'Matheus Guimarães de Lima'});
