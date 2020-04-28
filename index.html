@@ -7,14 +7,14 @@
         </script>
     </head> 
     <body onload="load()">
-         <button type="button" onclick="botao()" >Clique Aqui</button>
-         <p id="click" onclick="Redirecionar()" ></p>
-         <p  onmousemove="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
-         <p  onmousemove="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>  
+         <button type="button" onclick="botao()">Clique aqui</button>
+         <h1 id="click" onclick="redireciona()"></h1>
+         <p id="troco" onmousemove="troca(this)" onmouseout="volta(this)" style="color: darkmagenta;">Passe o mouse aqui!</p>
          <select onchange="funcaoChange(this)">
-             <option value="1"> Valor 1</option>
-             <option value="2">Valor 2</option>
-             <option value="3">Valor 3</option>
-         </select>
+            <option value="1">Valor 1</option>
+            <option value="2">Valor 2</option>
+            <option value="3">Valor 3</option>
+            <option value="4">Valor 4</option>
+        </select>
     </body>
 </html>
