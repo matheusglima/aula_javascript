@@ -26,3 +26,4 @@ console.log(multiplica3(2));
 console.log(multiplica3(3));
 console.log(multiplica3(4));
 console.log(multiplica3(5));
+

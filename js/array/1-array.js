@@ -1,4 +1,4 @@
-const users = ['Matheus', 'Lucas', 'Isa'];
+/*const users = ['Matheus', 'Lucas', 'Isa'];
 
 const gender = {
     MAN: Symbol('M'),
@@ -34,10 +34,10 @@ console.log('Sexo:', peoples[2].gender);
 //Verificar se é array
 console.log('Verifica se é Array:', Array.isArray(peoples));
 
-/*//Iterar itens do array
+//Iterar itens do array
 peoples.forEach((peoples, index, arr) => {
     console.log(`Nomes/Index/Array: ${peoples.name} index: ${index}`, arr);
-});*/
+});
 
 //Filtrar itens do Array
 const womans = peoples.filter(peoples => peoples.gender === gender.WOMAN);
@@ -89,3 +89,49 @@ const mod = peoples.map((peoples) => {
 });
 
 console.log('Objeto: ', mod);
+*/
+
+const gender = {
+    MAN: Symbol('M'),
+    WOMAN: Symbol('F')
+}
+
+const users = [
+    {
+        name: 'Matheus',
+        age: 22,
+        gender: gender.MAN
+    },
+    {
+        name: 'Isa',
+        age: 25,
+        gender: gender.WOMAN
+    }, 
+    {
+        name: 'João',
+        age: 28,
+        gender: gender.MAN
+    }
+];
+
+
+const totalAge = users.reduce((age, users) => {
+    age += users.age;
+    return age;
+}, 0);
+
+console.log(`Soma das idades: ${totalAge}`);
+
+const totalLength = users.reduce((len, users) => {
+    len += users.name.length;
+    return len;
+}, 0);
+
+const totalAgePair = users.filter(user => user.age % 2 === 0)
+                            .reduce((pair, users) => {
+                                pair += users.age;
+                                return pair;
+                            }, 0); //init pair = 0;
+
+console.log(`Total idades pares: ${totalAgePair}`);
+console.log(`Total de letras: ${totalLength}`);
